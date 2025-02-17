@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 3.4)
+cmake_minimum_required(VERSION 3.5)
 
-project(libhebi VERSION 2.15.0)
+project(libhebi VERSION 2.16.3)
 
 add_library(hebi SHARED IMPORTED GLOBAL)
 
@@ -14,7 +14,7 @@ if (UNIX AND NOT APPLE)
 
   set(LIBHEBI_TARGET_ARCHITECTURE "x86_64" CACHE STRING
     "Target architecture. [i686, x86_64, armhf, aarch64]")
-
+  
   # Detect cross-compilation, especially on the ROS build farm:
   if (${CMAKE_LIBRARY_ARCHITECTURE} MATCHES "^i[3456]86-linux-gnu$")
     set(LIBHEBI_TARGET_ARCHITECTURE "i686")
