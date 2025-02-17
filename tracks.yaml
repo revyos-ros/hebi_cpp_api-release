@@ -1,3 +1,4 @@
+release_repo_url: git@github.com:revyos-ros/hebi_cpp_api-release.git
 tracks:
   humble:
     actions:
